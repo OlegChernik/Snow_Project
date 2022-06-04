@@ -1,1 +1,17 @@
 $color-title:#ffffff;
+$color-sub:rgba(20, 20, 20, 1);
+$color-top:rgba(196, 196, 196, 0.2);
+
+
+
+
+%contenr {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+%centr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

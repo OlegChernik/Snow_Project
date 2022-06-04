@@ -2,3 +2,206 @@
 @import './variable';
 @import './buttons';
 
+.wrapper {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.fon {
+    width: 100%;
+    position: absolute;
+    top: 1.1rem;
+    left: 0;
+    background: $color-top;
+    height: 70px;
+}
+
+.header {
+
+    &__sutotle {
+        max-width: 100%;
+        background: $color-sub;
+        color: $color-title;
+        text-align: center;
+        font-size: 13px;   
+    }
+
+    &__top {
+        @extend  %contenr;
+        @extend %centr;
+    }
+}
+
+.logo {
+    @extend %centr;
+
+    img {
+        margin-right: 0.5rem;
+    }
+   
+}
+.form {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    
+    .input{
+        width: 100%;
+        border: 1px solid  rgba(102, 99, 99, 1);
+        border-radius: 15px;
+        height: 32px;
+        padding-left: 50px;
+        background:white url('../img/icons/search.svg')left 1rem center no-repeat;
+    }
+}
+
+.things {
+    @extend %centr;
+    position: relative;
+
+    .language {
+        @extend %centr;
+        margin-right: 1.5rem;
+
+        span {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .account {
+        margin-right: 2rem;
+        position: relative;
+
+        &::after {
+            content:'';
+            width: 8px;
+            height: 5px;
+            display: inline-block;
+            background:url('../img/icons/VectorG\).svg')no-repeat;
+            position: absolute;
+            top: 5px;
+            right: -13px;
+        }
+    }
+    .usd {
+        margin-right: 2rem;
+        position: relative;
+
+        &::after {
+            content:'';
+            width: 8px;
+            height: 5px;
+            display: inline-block;
+            background:url('../img/icons/VectorG\).svg')no-repeat;
+            position: absolute;
+            top: 5px;
+            right: -13px;
+        }
+    }
+    .basket {
+        background: url(../img/icons/three.svg) top right  no-repeat;
+        padding-right: 14px;
+        
+
+    }
+}
+
+.nav {
+    @extend %contenr;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    
+   &__lists {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    }
+
+    &__list {
+        margin-right:4rem;
+
+        &:first-child {
+            margin-right: 1.5rem;
+        }    
+    }
+
+
+    &__link {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    &__active {
+        color: white;
+        padding:  9px 19px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 0;
+
+        &::before {
+            content:'';
+            display: inline-block;
+            width: 13px;
+            height: 10px;
+            background: url('../img/icons/Frame.14.svg') 0 0 no-repeat;
+            margin-right: 10px;
+        }   
+    }
+
+    &__red {
+        color: red;
+    }
+}
+
+.banner {
+    background: url('../img/st_banner\ 1.jpg')top center / cover no-repeat;
+    padding: 14rem 0 13rem 10rem;
+
+    &__title {
+        color: $color-title;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &::before {
+            content:"";
+            display: inline-block;
+            width: 18px;
+            height: 28px;
+            background: url('../img/icons/стрелка\ влево.svg') no-repeat;
+            position: absolute;
+            top: 2rem;
+            left: -8rem;
+        }
+
+        &::after {
+            content:"";
+            display: inline-block;
+            width: 18px;
+            height: 28px;
+            background: url('../img/icons/стрелка\ вправо.svg') no-repeat;
+            position: absolute;
+            top: 2rem;
+            right:2rem;
+        }
+    }
+
+    &__sabtitle {
+        color: rgba(0, 0, 0, 1) ;
+        margin-bottom: 1rem;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__button {
+        color: rgba(7, 114, 191, 1);
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0.5rem 3rem;
+    }
+}
+
